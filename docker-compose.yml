@@ -1,7 +1,7 @@
 version: '3.8'
 services:
   web:
-    image: rupalsoni123/react_app:latest
+    image: ${DOCKER_IMAGE}
     ports:
       - "3000:3000"
     environment:
