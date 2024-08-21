@@ -1,3 +1,4 @@
+version: '2.11'
 services:
   web:
     image: rupalsoni123/react-app-image
