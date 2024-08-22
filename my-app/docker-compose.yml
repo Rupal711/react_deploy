@@ -4,7 +4,7 @@ services:
   web:
     image: ${DOCKER_IMAGE}
     ports:
-      - "3000:3000"
+      - "3001:3000"
     volumes:
       - .:/app
-    command: serve -s build -l 3000
+    command: serve -s build -l 3001
