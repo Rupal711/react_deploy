@@ -1,10 +1,11 @@
-version: '2.11'
+version: '3'
 services:
-  web:
-    image: rupalsoni123/react-app-image
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
     ports:
       - "3000:3000"
-    environment:
-      - NODE_ENV=production
-    restart: always
-
+    volumes:
+      - .:/app
+    command: npm start
